@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="6_1080_MELNIC_CATALINA.js"></script>
+
+    <title>SVG Editor</title>
+</head>
+
+<body class="body">
+    <!-- <h3>Editor SVG. Autor: M   elnic Catalina</h3> -->
+    ​
+    <div class="navbar row">
+        <div class="dropdown col-md-1">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Options</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Save image</a>
+                <a class="dropdown-item" href="#">New image</a>
+            </div>
+        </div>
+        <div class="tool-menu btn-group btn-group-toggle col-md-4"
+            style="position: absolute !important; left: 10% !important;" data-toggle="buttons">
+            <label class="btn btn-outline-secondary btn-select">
+                <input type="radio" name="options" checked> <i class="fas fa-mouse-pointer"></i>
+            </label>
+            <label class="btn btn-outline-secondary btn-move">
+                <input type="radio" name="options" checked> <i class="fas fa-people-carry"></i>
+            </label>
+            <label class="btn btn-outline-secondary btn-edit">
+                <input type="radio" name="options" checked> <i class="fas fa-pencil-alt"></i>
+            </label>
+            <label class="btn btn-outline-secondary btn-line">
+                <input type="radio" name="options" checked> <i class="fas fa-minus"></i>
+            </label>
+            <label class="btn btn-outline-secondary btn-rect">
+                <input type="radio" name="options" checked> <i class="fas fa-cube"></i>
+            </label>
+            <label class="btn btn-outline-secondary btn-circle">
+                <input type="radio" name="options" checked> <i class="far fa-circle"></i>
+            </label>
+            <label class="btn btn-outline-secondary btn-text">
+                <input type="radio" name="options" id="option8" checked> <i class="fas fa-font"></i>
+            </label>
+            <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option9" class="btn-image" checked> <i class="fas fa-image"></i>
+            </label>
+            <label class="btn btn-outline-secondary btn-clear">
+                <input type="radio" name="options" checked> <i class="fas fa-trash-alt"></i>
+            </label>
+
+            <input name="Color Picker" type="color" class="btn " />
+        </div>
+    </div>
+
+    <div class="div-svg ml-3">
+        <svg id="svg" width='1000' height='600' style='background: #ffffff'>
+            <!-- <text x="0" y="20" font-size="18" font-family="Arial" fill="#000080">Name:</text> -->
+        </svg>
+    </div>
+
+    ​
+
+    <link href="lib\fontawesome-free-5.12.0-web\css\all.min.css" rel="stylesheet">
+    <link href="lib\bootstrap\bootstrap-4.3.1-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="6_1080_MELNIC_CATALINA.css" rel="stylesheet">
+</body>
+
+</html>
